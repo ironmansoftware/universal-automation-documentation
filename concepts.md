@@ -40,27 +40,27 @@ Using the Get-Process cmdlet will output a PowerShell object contain running pro
 
 #### Cmdlet
 
-See the ``Get-UAJobOutput`` cmdlet.
+See the `Get-UAJobOutput` cmdlet.
 
 ## Feedback
 
-Jobs can have feedback - this allows direct interaction with an in-progress job. 
+Jobs can have feedback - this allows direct interaction with an in-progress job.
 
-If a script has a ``Read-Host`` present, this will be interpreted as "feedback" and the script will be paused until a response (Feedback) is provided to the job.
+If a script has a `Read-Host` present, this will be interpreted as "feedback" and the script will be paused until a response \(Feedback\) is provided to the job.
 
-See the ``Get-UAJobFeedback`` cmdlet.
+See the `Get-UAJobFeedback` cmdlet.
 
 ## Schedules
 
 SCripts can be configure with a Schedule so that is executed on a regular basis. SChedules currently are defined via CRON format.
 
-See the ``Get-UASchedule`` cmdlet.
+See the `Get-UASchedule` cmdlet.
 
 ## Tags
 
 Tags are a method used to organize scripts. Tags are applied to script to allow for lightweight organization of scirpts by being able to retrieve scripts based on their tag.
 
-See the ``Get-UATag`` and ``New-UAScript`` cmdlets.
+See the `Get-UATag` and `New-UAScript` cmdlets.
 
 ## Variables
 
@@ -75,16 +75,17 @@ This allows scripts to be used lightweight/simple storage for variables.
 * Email Addresses
 * Server Addresses
 * URLs / Webhook API URIs
-* Timestamps ("LastUpdated", "LastRecordProcessed")
+* Timestamps \("LastUpdated", "LastRecordProcessed"\)
 
 ### Encrypted Variables
+
 Variables can be encrypted.
 
 ### Using Variables
-``New-UAVariable``
-``Set-UAVariable``
-``Remove-UAVariable``
+
+`New-UAVariable` `Set-UAVariable` `Remove-UAVariable`
 
 ### Examples of Variables
 
 ### Advanced Example of Variables
+

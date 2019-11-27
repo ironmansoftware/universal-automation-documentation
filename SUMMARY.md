@@ -4,5 +4,7 @@
 * [Getting Started](gettingstarted.md)
 * [Concepts](concepts.md)
 * [System Requirements](systemrequirements.md)
-* [GitSync Details](gitsync.md)
+* [Git Integration](gitsync.md)
+* [Configuration](configuration.md)
 * [Authoring Experience](authoringexperience.md)
+

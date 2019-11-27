@@ -1,4 +1,4 @@
-# Universal Automation Documentation
+# Introduction
 
 Universal Automation is a lightweight and easy to use automation platform built for PowerShell.
 
@@ -11,10 +11,9 @@ Universal Automation is a lightweight and easy to use automation platform built 
 * **Built-in Dashboard** - A dashboard, built on [Universal Dashboard](https://universaldashboard.io/), is included to allow for easy interaction with the platform, authentication and hosting.
 * **Git Integration** Universal Automation integrates with git automatically. Sync changes to scripts, schedules and variables directly from your git repository.
 
-
 ## System Requirements
 
-- Windows PowerShell 5.1 or PowerShell 6+
+* Windows PowerShell 5.1 or PowerShell 6+
 
 ## Resources
 
@@ -24,3 +23,4 @@ Universal Automation is a lightweight and easy to use automation platform built 
 ## License
 
 TBA
+
