@@ -10,3 +10,7 @@ UA will automatically pull from the master branch to local. It will sync the loc
 
 When changes are made through the UA REST API or PowerShell cmdlets, the changes will be automatically written to disk, committed to git and pushed to a remote, if configured. Even if a remote isn't configured, changes will be written to disk and committed to git. 
 
+## Merge Conflicts
+
+Universal Automation does not yet deal with merge conflicts. 
+

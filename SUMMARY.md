@@ -4,7 +4,8 @@
 * [Getting Started](gettingstarted.md)
 * [Concepts](concepts.md)
 * [System Requirements](systemrequirements.md)
-* [Git Integration](gitsync.md)
 * [Configuration](configuration.md)
+* [Git Integration](gitsync.md)
+* [Dashboard](dashboard.md)
 * [Authoring Experience](authoringexperience.md)
 
