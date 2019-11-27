@@ -52,13 +52,13 @@ See the `Get-UAJobFeedback` cmdlet.
 
 ## Schedules
 
-SCripts can be configure with a Schedule so that is executed on a regular basis. SChedules currently are defined via CRON format.
+Scripts can be configure with a Schedule so that is executed on a regular basis. Schedules currently are defined via CRON format.
 
 See the `Get-UASchedule` cmdlet.
 
 ## Tags
 
-Tags are a method used to organize scripts. Tags are applied to script to allow for lightweight organization of scirpts by being able to retrieve scripts based on their tag.
+Tags are a method used to organize scripts. Tags are applied to script to allow for lightweight organization of scripts by being able to retrieve scripts based on their tag.
 
 See the `Get-UATag` and `New-UAScript` cmdlets.
 

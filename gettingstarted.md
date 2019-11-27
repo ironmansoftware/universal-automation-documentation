@@ -91,5 +91,5 @@ $Tag = New-UATag -Name "Workstation Team" -Color "#e91e63"
 
 ## Learn More
 
-* [Concepts](concepts.md)
+* [Concepts](concepts/)
 
