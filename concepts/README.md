@@ -8,7 +8,9 @@ Scripts are PowerShell Scripts. These are the main unit of automation that can b
 
 ## Jobs
 
-Jobs are an instance of an executed script. A Job can have a variety of statuses indicating the state of execution
+Jobs are an instance of an executed script. Each job runs in it's own PowerShell.exe or Pwsh.exe process to completely isolate the script from other scripts in the environment. A custom PowerShell host collects information about the running script and communicates it back to the UA job execution service. 
+
+A Job can have a variety of statuses indicating the state of execution
 
 * Queued - a job is currently preparing to be executed
 * Running - a job is currently being executed
@@ -32,7 +34,7 @@ Write-Host "Hello World" will simply show "Hello World" on the Job Output
 
 ### Pipeline Job Output
 
-Pipeline job output are actual rich powershell objects output by the script
+Pipeline job output are actual rich PowerShell objects output by the script. They are stored in the UA database as CliXml so that they can be deserialized and used in other scripts or passed to other jobs. 
 
 #### Example
 
