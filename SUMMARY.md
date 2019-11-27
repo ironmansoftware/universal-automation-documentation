@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * [Getting Started](gettingstarted.md)
 * [Concepts](concepts/README.md)
+  * [Scripts](concepts/scripts.md)
   * [Scheduling](concepts/scheduling.md)
 * [System Requirements](systemrequirements.md)
 * [Configuration](configuration/README.md)
