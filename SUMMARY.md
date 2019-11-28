@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
+* [System Requirements](systemrequirements.md)
 * [Getting Started](gettingstarted.md)
 * [Concepts](concepts/README.md)
   * [UA Server](concepts/ua-server.md)
@@ -12,7 +13,6 @@
   * [Scheduling](concepts/scheduling.md)
   * [Tags](concepts/tags.md)
   * [Variables](concepts/variables.md)
-* [System Requirements](systemrequirements.md)
 * [Configuration](configuration/README.md)
   * [Files](configuration/files.md)
 * [Git Integration](gitsync.md)
