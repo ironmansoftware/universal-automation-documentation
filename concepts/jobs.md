@@ -29,3 +29,7 @@ $Job = Get-UAJob -Id 1
 Get-UAJobPipelineOuput -Job $Job 
 ```
 
+## Dealing with Feedback
+
+Feedback can come from commands that request it, such as a cmdlet that requires additional parameters to be set, or from invoking a cmdlet like `Read-Host`. When feedback is requested by a job, the job will enter a `WaitingForFeedback` state. You can find jobs that are waiting for feedback by using `Get-UAJob`. You can set the feedback for a job using `Set-UAJobFeedback`.
+
