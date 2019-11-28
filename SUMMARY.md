@@ -17,5 +17,4 @@
   * [Files](configuration/files.md)
 * [Git Integration](gitsync.md)
 * [Dashboard](dashboard.md)
-* [Authoring Experience](authoringexperience.md)
 
