@@ -4,7 +4,7 @@
 
 Universal Automation uses PS1 scripts to configure itself. You can either edit settings for a script, schedule or variable via the REST API or PowerShell module or via the PS1 scripts that are stored in the `.ua` folder. Whenever you make a change through the REST API or PowerShell module, it will automatically update a PS1 file with the same name in the `.ua` folder with the changes settings. You can also add these files yourself or edit them via git. 
 
-![Script Info File](../.gitbook/assets/image%20%282%29.png)
+![Script Info File](../.gitbook/assets/image.png)
 
 ## Database 
 
