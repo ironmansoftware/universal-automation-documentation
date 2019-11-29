@@ -94,9 +94,10 @@ $Tag = New-UATag -Name "Workstation Team" -Color "#e91e63"
 ```text
 $Tag = Get-UATag -Name "Workstation Team"
 $Script = Get-UAScript -Id 5
-Add-UAScriptTag -Script $Script -Tag $Tag 
+Add-UAScriptTag -Script $Script -Tag $Tag
 ```
 
 ## Learn More
 
 * [Concepts](concepts/)
+

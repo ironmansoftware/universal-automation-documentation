@@ -13,3 +13,4 @@ When changes are made through the UA REST API or PowerShell cmdlets, the changes
 ## Merge Conflicts
 
 Universal Automation does not yet deal with merge conflicts.
+

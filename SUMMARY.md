@@ -16,5 +16,6 @@
 * [Configuration](configuration/README.md)
   * [Files](configuration/files.md)
 * [Git Integration](gitsync.md)
-* [Dashboard](dashboard.md)
+* [Dashboard](dashboard/README.md)
+  * [Authentication](dashboard/authentication.md)
 
