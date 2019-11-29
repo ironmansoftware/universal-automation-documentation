@@ -89,7 +89,14 @@ New-UASchedule -Script $Script -Cron '*/12 * * * *'
 $Tag = New-UATag -Name "Workstation Team" -Color "#e91e63"
 ```
 
+### Tagging a Script with a Tag
+
+```text
+$Tag = Get-UATag -Name "Workstation Team"
+$Script = Get-UAScript -Id 5
+Add-UAScriptTag -Script $Script -Tag $Tag 
+```
+
 ## Learn More
 
 * [Concepts](concepts/)
-

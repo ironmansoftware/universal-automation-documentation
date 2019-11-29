@@ -4,7 +4,4 @@ Identities are the users or services connecting to your UA server. Identities ar
 
 ## Getting Identities
 
-To retrieve Identities, use the `Get-UAIdentity` . 
-
-
-
+To retrieve Identities, use the `Get-UAIdentity` .
