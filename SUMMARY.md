@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Beta Quickstart!](betaquickstart.md)
+* [Sample Script](sample-script.md)
 * [System Requirements](systemrequirements.md)
 * [Getting Started](gettingstarted.md)
 * [Concepts](concepts/README.md)

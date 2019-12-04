@@ -1,4 +1,4 @@
-# Beta QuickStart
+# Beta Quickstart!
 
 ## Installing Universal Automation
 
@@ -8,12 +8,9 @@ To obtain the latest beta module of Universal Automation`UniversalAutomation` mo
 2. Extract the Zip, this will output two module folders.
 3. Import the Universal Automation PowerShell Module and the Universal Automation Dashboard Module.
 
-
 {% hint style="warning" %}
-NOTE: You should ensure to UNBLOCK the extracted files if using Windows. After downloading a zip file from the web Windows may prevent the script module from loading properly by "blocking" the extracted module files. Run the following PowerShell command in the extracted module folders to ensure no files are being blocked by Windows.
-``dir -recurse | Unblock-File``
+NOTE: You should ensure to UNBLOCK the extracted files if using Windows. After downloading a zip file from the web Windows may prevent the script module from loading properly by "blocking" the extracted module files. Run the following PowerShell command in the extracted module folders to ensure no files are being blocked by Windows. `dir -recurse | Unblock-File`
 {% endhint %}
-
 
 ```text
 Import-Module "PATHTOMODULEFOLDER\UniversalAutomation.psd1" -Force
@@ -49,3 +46,4 @@ Default UserName and Password for the UA Dashboard is: "Admin/Admin"
 ## Learn More
 
 * [Getting Started](gettingstarted.md)
+
