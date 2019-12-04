@@ -10,7 +10,7 @@ To obtain the latest beta module of Universal Automation`UniversalAutomation` mo
 
 
 {% hint style="warning" %}
-NOTE: You should ensure to UNBLOCK the extracted files if using Windows. After downloading a zip file from the web Windows may prevent the script module from loading properly by "blocking" the extracted module files. Run the following PowerShell command to ensure no files are being blocked by Windows.
+NOTE: You should ensure to UNBLOCK the extracted files if using Windows. After downloading a zip file from the web Windows may prevent the script module from loading properly by "blocking" the extracted module files. Run the following PowerShell command in the extracted module folders to ensure no files are being blocked by Windows.
 ``dir -recurse | Unblock-File``
 {% endhint %}
 
