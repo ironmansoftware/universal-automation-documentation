@@ -9,6 +9,12 @@ To obtain the latest beta module of Universal Automation`UniversalAutomation` mo
 3. Import the Universal Automation PowerShell Module and the Universal Automation Dashboard Module.
 
 
+{% hint style="warning" %}
+NOTE: You should ensure to first UNBLOCK THE ZIP file and the extracted files if using windows afte downloading and extracting the files. Otherwise Windows may prevent the script module from loading properly.
+``dir -recurse | Unblock-File``
+{% endhint %}
+
+
 ```text
 Import-Module "PATHTOMODULEFOLDER\UniversalAutomation.psd1" -Force
 Import-Module "PATHTOMODULEFOLDER\UniversalAutomation.Dashboard.psd1" -Force
