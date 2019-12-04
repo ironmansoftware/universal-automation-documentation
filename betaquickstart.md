@@ -6,7 +6,8 @@ To obtain the latest beta module of Universal Automation`UniversalAutomation` mo
 
 1. Download the Zip File for the latest module version
 2. Extract the Zip, this will output two module folders.
-3. Import the Universal Automation PowerShell Module and the Universal Automation Dashboard Module.
+3. Install the necessary Universal Dashboard modules: UniversalDashboard, UniversalDashboard.CodeEditor, UniversalDashboard.Style, UniversalDashboard.Helmet and UniversalDashboard.Diagrams
+4. Import the Universal Automation PowerShell Module and the Universal Automation Dashboard Module.
 
 {% hint style="warning" %}
 NOTE: You should ensure to UNBLOCK the extracted files if using Windows. After downloading a zip file from the web Windows may prevent the script module from loading properly by "blocking" the extracted module files. Run the following PowerShell command in the extracted module folders to ensure no files are being blocked by Windows. `dir -recurse | Unblock-File`
