@@ -3,6 +3,8 @@
 This sample script can be used to get up and running with an example of UA with several scripts, tags, a folder and UD authentication. 
 
 ```text
+Remove-Item "$Env:LocalAppData\UniversalAutomation" -Force -Recurse -ErrorAction SilentlyContinue
+
 Import-Module "UniversalAutomation" -Force
 Import-Module "UniversalAutomation.Dashboard" -Force
 
