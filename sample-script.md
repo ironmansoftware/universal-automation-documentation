@@ -71,7 +71,6 @@ Invoke-UAScript -Script $Script
 $Script = New-UAScript -Name "Runs forever" -ManualTime 600 -ScriptBlock { while(1) { Start-Sleep -Seconds 1 } } -Status "Published" -Folder $Folder
 
 $Script = New-UAScript -Name "Shutdown Virtual Labs" -ManualTime 600 -ScriptBlock { Write-Host "Step 3" } -Status "Published"
-$Script = New-UAScript -Name "New User Onboarding Request" -ManualTime 28000 -ScriptBlock ([scriptblock]::Create((Get-Content "$PSScriptRoot\UniversalAutomation.Dashboard\examplescripts\onboarding.ps1"))) -Status "Draft"
 
 $Tag = New-UATag -Name "MyTag" -Color "#ffffff"
 $Tag = New-UATag -Name "Testing" -Color "#f44336"
