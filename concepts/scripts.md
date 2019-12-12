@@ -8,7 +8,16 @@ To add a script to UA, you need to either clone a remote git repo with PS1 files
 
 ## Invoking a script with PowerShell
 
-You can invoke a script using the `Invoke-UAScript` cmdlet. Pass in either the Id of the script or a Script object returned by `Get-UAScript`. You can also include parameters to the script using dynamic parameters to `Invoke-UAScript`. It will pass them to the PS1 file in the execution engine. 
+You can invoke a script using the `Invoke-UAScript` cmdlet. Pass in either the Id of the script or a Script object returned by `Get-UAScript`. 
+
+#### Passing Parameters to Scripts
+
+`Invoke-UAScript`supports passing parameters to scripts via dynamic parameters. You can simply add new parameters to `Invoke-UAScript` to have it pass the parameter name and value to the target script. 
+
+```text
+$Script = Get-UAScript -Id 3
+Invoke-UAScript -Script $Script -MyScriptParameter "Hello, World!"
+```
 
 ## Removing Scripts from UA
 
