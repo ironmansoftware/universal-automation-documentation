@@ -10,8 +10,17 @@ This example runs a script every two minutes. Immediately after running `New-UAS
 
 ```text
 $Script = Get-UAScript -Id 3
-New-UASchedule -Cron '*/2 * * * *' 
+New-UASchedule -Cron '*/2 * * * *' -Script $Script
 ```
 
+## Continuous Script Scheduling
 
+You can schedule a script to run continuously. A new job will start as soon as the previous run of the script has finished. You can also configure the schedule to delay before starting the next job. 
+
+The below will schedule script 3 to run continuously with a delay of 10 seconds between each run. 
+
+```text
+$Script = Get-UAScript -Id 3
+New-UASchedule -Continuous -DelaySecond 10 
+```
 
