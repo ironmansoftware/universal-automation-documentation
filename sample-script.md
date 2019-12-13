@@ -25,13 +25,28 @@ $AuthMethod = New-UDAuthenticationMethod -Endpoint {
 $AuthPolicy = New-UDAuthorizationPolicy -Name "Policy" -Endpoint {
     param($ClaimsPrincipal)
 
+    $UserName = $ClaimsPrincipal.Identity.Name 
+
     if (-not $Session:AppToken)
     {
-        $Identity = Get-UAIdentity -Name $ClaimsPrincipal.Identity.Name 
+        $Identity = Get-UAIdentity -Name $UserName 
         if ($Identity -eq $null)
         {
-            $Role = Get-UARole -Name "Administrator"
-            New-UAIdentity -Name $ClaimsPrincipal.Identity.Name -Role $Role
+            if ($UserName -eq 'OperatorFred')
+            {
+                $Role = Get-UARole -Name "Operator"
+                New-UAIdentity -Name $UserName -Role $Role
+            }            
+            elseif ($UserName -eq 'ReaderJane')
+            {
+                $Role = Get-UARole -Name "Reader"
+                New-UAIdentity -Name $UserName -Role $Role
+            }
+            else 
+            {
+                $Role = Get-UARole -Name "Administrator"
+                New-UAIdentity -Name $UserName -Role $Role
+            }
         }
 
         $Session:AppToken = Grant-UAAppToken -Identity $Identity
