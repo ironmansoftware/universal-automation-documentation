@@ -15,10 +15,10 @@
   * [Scheduling](concepts/scheduling.md)
   * [Tags](concepts/tags.md)
   * [Variables](concepts/variables.md)
+* [Authentication and Authorization](authentication-and-authorization.md)
 * [Configuration](configuration/README.md)
   * [Files](configuration/files.md)
 * [Git Integration](gitsync.md)
 * [Dashboard](dashboard/README.md)
   * [Authentication](dashboard/authentication.md)
-* [Authentication and Authorization](authentication-and-authorization.md)
 
