@@ -13,7 +13,7 @@ $ComputerName = "http://localhost:10000"
 Start-UAServer -Port 10000 
 
 $Cache:ComputerName = $ComputerName 
-$AppToken = Grant-UAAppToken -Identity System -Role Administrator -ComputerName $ComputerName
+$AppToken = Grant-UAAppToken -IdentityName System -Role Administrator -ComputerName $ComputerName
 Connect-UAServer -ComputerName $ComputerName -AppToken $AppToken.Token
 $Dashboard = New-UADashboard
 
@@ -23,22 +23,18 @@ $AuthMethod = New-UDAuthenticationMethod -Endpoint {
 }
 
 $AuthPolicy = New-UDAuthorizationPolicy -Name "Policy" -Endpoint {
+    param($ClaimsPrincipal)
+
     if (-not $Session:AppToken)
     {
-        $Identity = Get-UAIdentity -Name $User.Identity.Name 
-        if ($null -ne $Identity)
+        $Identity = Get-UAIdentity -Name $ClaimsPrincipal.Identity.Name 
+        if ($Identity -eq $null)
         {
-            $AppToken = Get-UAAppToken -Identity $Identity
-            if (-not $AppToken.Revoked)
-            {
-                $Session:AppToken = $AppToken.Token
-            }
+            $Role = Get-UARole -Name "Administrator"
+            New-UAIdentity -Name $ClaimsPrincipal.Identity.Name -Role $Role
         }
 
-        if (-not $Session:AppToken)
-        {
-            $Session:AppToken = (Grant-UAAppToken -Role Administrator -Identity $User.Identity.Name).Token
-        }
+        $Session:AppToken = Grant-UAAppToken -Identity $Identity
     }
     
     $true
