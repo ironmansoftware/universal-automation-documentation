@@ -6,3 +6,13 @@ Identities are the users or services connecting to your UA server. Identities ar
 
 To retrieve Identities, use the `Get-UAIdentity` .
 
+## Creating New Identities
+
+New Identities can be created with the `New-UAIdentity` command.
+
+When creating a new Identity, the Identity can also be assigned to a Role.
+
+```text
+$Role = Get-UARole -Name "admin"
+New-UAIdentity -Name "TestUser" -Role $Role
+```
