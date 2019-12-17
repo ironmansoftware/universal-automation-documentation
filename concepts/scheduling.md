@@ -21,6 +21,7 @@ The below will schedule script 3 to run continuously with a delay of 10 seconds 
 
 ```text
 $Script = Get-UAScript -Id 3
-New-UASchedule -Continuous -DelaySecond 10 
+New-UASchedule -Continuous -DelaySecond 10 -Script $Script
 ```
 
+The `-DelaySecond`,`-DelayMinute`, or `-DelayHour` parameter can be used to control time between executions.
