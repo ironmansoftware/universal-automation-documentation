@@ -19,5 +19,5 @@ $SecretManager Get-UASecretManager -Name 'DAPI'
 New-UAVariable -Name 'ApiKey' -SecretManager $SecretManager
 ```
 
-
+The value of secrets are never stored in the UA database or git repo. You need to ensure that you do not log the secrets in your scripts in order to prevent exposing them through the logs. 
 
