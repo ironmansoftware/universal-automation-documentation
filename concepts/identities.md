@@ -16,3 +16,4 @@ When creating a new Identity, the Identity can also be assigned to a Role.
 $Role = Get-UARole -Name "admin"
 New-UAIdentity -Name "TestUser" -Role $Role
 ```
+

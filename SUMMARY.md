@@ -13,6 +13,7 @@
   * [Jobs](concepts/jobs.md)
   * [Scripts](concepts/scripts.md)
   * [Scheduling](concepts/scheduling.md)
+  * [Secret Managers](concepts/secret-managers.md)
   * [Tags](concepts/tags.md)
   * [Variables](concepts/variables.md)
 * [Authentication and Authorization](authentication-and-authorization.md)
