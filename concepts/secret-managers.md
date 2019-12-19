@@ -16,5 +16,8 @@ You can then create variables in UA that request the value from the secret manag
 New-UAVariable -Name 'ApiKey' -SecretManager $DapiSecretManager
 ```
 
+These variables and their Secret Values can then be used in scripts by calling the name of the UA Variable.
 
-
+```text
+Write-Host $ApiKey
+```
