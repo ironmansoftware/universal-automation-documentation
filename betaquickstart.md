@@ -27,7 +27,7 @@ Once imported, we need to take a number of steps to Start and connect to our Uni
 
 ```text
 Start-UAServer -Port 10000
-$AppToken = Grant-UAAppToken -Identity System -Role Administrator -ComputerName "http://localhost:10000"
+$AppToken = Grant-UAAppToken -IdentityName System -Role Administrator -ComputerName "http://localhost:10000"
 Connect-UAServer -ComputerName "http://localhost:10000" -AppToken $AppToken.Token
 ```
 
