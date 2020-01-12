@@ -65,6 +65,12 @@ At this point we'll have our Universal Automation server started and ready to re
 $Script = New-UAScript -Name "My First Script" -ScriptBlock {Start-Sleep -Seconds 5; Write-Host "Hello World"}
 ```
 
+### Create a Script from an external .PS1 file
+
+```text
+$Script = New-UAScript -Name "Imported Script" -ScriptBlock (Get-Command "C:\Test\MyScript.ps1" | Select -ExpandProperty ScriptBlock)
+```
+
 ### Get Script Object
 
 ```text
