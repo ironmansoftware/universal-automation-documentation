@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Beta Quickstart!](betaquickstart.md)
 * [Sample Script](sample-script.md)
 * [System Requirements](systemrequirements.md)
 * [Getting Started](gettingstarted.md)

@@ -4,20 +4,13 @@
 
 The installation of Universal Automation can be accomplished by merely installing Universal Automation from the PowerShell Gallery. Installing Universal Automation from the PowerShell Gallery can be accomplished by using `Install-Module` PowerShell Command. The Universal Automation module comes in 3 variants:
 
-* UniversalAutomation - Includes the Core Universal Automation Platform and a Universal Dashboard for Universal Automation
-* Automation Core - Includes just the core Universal Automation and no web-based management dashboard
+* UniversalAutomation - Includes the Universal Automation agent and cmdlets. 
 * UniversalAutomation.Dashboard - Starts just Universal Dashboard for Universal Automation \(for those who wish to separate their dashboard host from their Universal Automation host.
 
-To install both Universal Automation and the Universal Automation dashboard, use the `UniversalAutomation` module.
+To install the agent and cmdlets, install UniversalAutomation.
 
 ```text
 Install-Module -Name UniversalAutomation
-```
-
-To install only Universal Automation, install `UniversalAutomation.Core`.
-
-```text
-Install-Module -Name UniversalAutomation.Core
 ```
 
 To install the Universal Automation Dashboard, install the `UniversalAutomation.Dashboard` module.
@@ -42,8 +35,7 @@ Once imported, we need to take a number of steps to Start and connector to our U
 
 ```text
 Start-UAServer -Port 10000
-$AppToken = Grant-UAAppToken -Identity System -Role Administrator -ComputerName "http://localhost:10000"
-Connect-UAServer -ComputerName "http://localhost:10000" -AppToken $AppToken.Token
+Connect-UAServer -ComputerName "http://localhost:10000"
 ```
 
 Once connected, we'll immediately be able to execute commands against our Universal Automation Instance.
