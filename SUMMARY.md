@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * [System Requirements](systemrequirements.md)
 * [Getting Started](gettingstarted.md)
+* [Licensing](licensing.md)
 * [Sample Script](sample-script.md)
 * [Concepts](concepts/README.md)
   * [UA Server](concepts/ua-server.md)
