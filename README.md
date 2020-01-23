@@ -20,7 +20,3 @@ Universal Automation is a lightweight and easy to use automation platform built 
 * [Documentation](https://docs.universalautomation.io)
 * [Forums](https://forums.universaldashboard.io)
 
-## License
-
-TBA
-
