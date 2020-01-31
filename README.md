@@ -2,7 +2,7 @@
 
 Universal Automation is a lightweight and easy to use automation platform built for PowerShell.
 
-https://youtu.be/u9Hq4X8V7VY
+{% embed url="https://youtu.be/u9Hq4X8V7VY" %}
 
 ## Features
 
