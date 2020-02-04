@@ -18,5 +18,5 @@ If you want to view the details of a particular script, you can use the scripts 
 
 If there are multiple items in the commit history, you'll be able to view the diff of the two scripts by clicking the compare diffs button.
 
-![](../.gitbook/assets/image%20%286%29.png)
+![](../.gitbook/assets/image%20%287%29.png)
 
