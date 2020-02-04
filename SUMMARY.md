@@ -25,4 +25,5 @@
   * [Authentication](dashboard/authentication.md)
 * [Hosting](hosting/README.md)
   * [IIS](hosting/iis.md)
+  * [Windows Service](hosting/windows-service.md)
 
