@@ -10,10 +10,10 @@ Universal Automation uses PS1 scripts to configure itself. You can either edit s
 
 Universal Automation uses a LiteDB single-file database to store cached script, schedule and variable information. It also stores job status and output information. You can configure the database file path by setting the `ConnectionString` parameter of `Start-UAServer`.
 
-By default, the database is stored in the `%AppData%` folder.
+By default, the database is stored in the `%LocalAppData%` folder.
 
 ```text
-Start-UAServer -ConnectionString "$Env:APPDATA\UniversalAutomation\database.db"
+Start-UAServer -ConnectionString "$Env:LOCALAPPDATA\UniversalAutomation\database.db"
 ```
 
 ## Git 
