@@ -34,8 +34,8 @@ Once imported, we need to take a number of steps to Start and connector to our U
 2. Connect our PowerShell Terminal to the Universal Automation Server
 
 ```text
-Start-UAServer -Port 10000
-Connect-UAServer -ComputerName "http://localhost:10000"
+$AppToken = Start-UAServer -Port 10000
+Connect-UAServer -ComputerName "http://localhost:10000" -AppToken $AppToken
 ```
 
 Once connected, we'll immediately be able to execute commands against our Universal Automation Instance.
