@@ -19,7 +19,7 @@ Licenses require internet access for activation. They will attempt to communicat
 
 You can install a license from the licensing tab. 
 
-![License Dialog for Universal Automation](.gitbook/assets/image%20%285%29.png)
+![License Dialog for Universal Automation](.gitbook/assets/image%20%287%29.png)
 
 ## Installing a License from the command line
 

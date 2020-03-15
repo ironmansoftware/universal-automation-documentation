@@ -1,6 +1,58 @@
+---
+description: This pages provides getting start topics
+---
+
 # Getting Started
 
-## Installing Universal Automation
+## Universal Automation 
+
+{% hint style="info" %}
+This section only applies to Windows. 
+{% endhint %}
+
+### Installation
+
+1. Download the Universal Automation MSI
+2. Run the Universal Automation MSI 
+3. A web browser will open to the Universal Automation Dashboard 
+
+
+
+## Universal Automation Desktop
+
+### Installation
+
+{% hint style="info" %}
+This section only applies to Windows. 
+{% endhint %}
+
+1. Download the Universal Automation Desktop installer
+2. Run the Universal Automation Desktop installer
+3. UA Desktop will open after installation
+
+## Configuration
+
+### Adding and running your first script
+
+Click the new script button to add a new script. 
+
+![Click the new script button](.gitbook/assets/image%20%2812%29.png)
+
+You can enter information about the new script in the modal that appears. Only the name is required. 
+
+![](.gitbook/assets/image%20%2810%29.png)
+
+The edit the contents of the script, you can click View and then Edit.
+
+![](.gitbook/assets/image%20%283%29.png)
+
+
+
+After editing your script, click Save. You can run your script by clicking the Run button. 
+
+![](.gitbook/assets/image%20%281%29.png)
+
+## Installing Universal Automation Manually
 
 The installation of Universal Automation can be accomplished by merely installing Universal Automation from the PowerShell Gallery. Installing Universal Automation from the PowerShell Gallery can be accomplished by using `Install-Module` PowerShell Command. The Universal Automation module comes in 3 variants:
 
@@ -19,7 +71,7 @@ To install the Universal Automation Dashboard, install the `UniversalAutomation.
 Install-Module -Name UniversalAutomation.Dashboard
 ```
 
-## Starting Universal Automation
+## Starting Universal Automation Manually
 
 First, we'll Import the Universal Automation PowerShell Module and the Universal Automation Dashboard Module.
 
@@ -49,7 +101,7 @@ Start-UDDashboard -Dashboard $Dashboard -Port 10001
 
 At this point we'll have our Universal Automation server started and ready to receive commands.
 
-## Using Universal Automation
+## Using Universal Automation from the Command Line
 
 ### Create a Script
 
