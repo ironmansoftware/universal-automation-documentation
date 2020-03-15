@@ -21,7 +21,7 @@
 * [Configuration](configuration/README.md)
   * [Files](configuration/files.md)
 * [Git Integration](gitsync.md)
-* [Dashboard](dashboard/README.md)
+* [User Interface](dashboard/README.md)
   * [Authentication](dashboard/authentication.md)
 * [Hosting](hosting/README.md)
   * [IIS](hosting/iis.md)

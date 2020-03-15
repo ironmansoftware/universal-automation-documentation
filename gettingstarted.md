@@ -36,21 +36,21 @@ This section only applies to Windows.
 
 Click the new script button to add a new script. 
 
-![Click the new script button](.gitbook/assets/image%20%2812%29.png)
+![Click the new script button](.gitbook/assets/image%20%2816%29.png)
 
 You can enter information about the new script in the modal that appears. Only the name is required. 
 
-![](.gitbook/assets/image%20%2810%29.png)
+![](.gitbook/assets/image%20%2813%29.png)
 
 The edit the contents of the script, you can click View and then Edit.
 
-![](.gitbook/assets/image%20%283%29.png)
+![](.gitbook/assets/image%20%284%29.png)
 
 
 
 After editing your script, click Save. You can run your script by clicking the Run button. 
 
-![](.gitbook/assets/image%20%281%29.png)
+![](.gitbook/assets/image%20%282%29.png)
 
 ## Installing Universal Automation Manually
 
