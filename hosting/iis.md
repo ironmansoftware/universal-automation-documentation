@@ -1,5 +1,9 @@
 # IIS
 
+{% hint style="info" %}
+Due to the ease of configuration, the Windows Service configuration is recommended on Windows. If you wish to use IIS, you can find the configuration steps below. 
+{% endhint %}
+
 Hosting in IIS requires the use of a web.config file and installing the Universal Automation module in a location that the Application Pool Identity can access. You will also need to ensure that you have the [ASP.NET Core Hosting Bundle ](https://www.microsoft.com/net/permalink/dotnetcore-current-windows-runtime-bundle-installer)installed on the IIS web server. 
 
 You can install Universal Automation and the Universal Automation Dashboard in the All Users scope to allow it to be accessible by the Application Pool Identity.
