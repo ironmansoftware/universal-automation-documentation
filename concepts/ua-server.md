@@ -4,6 +4,21 @@ The UA server runs within a PowerShell.exe or Pwsh.exe instance. It starts outsi
 
 ## Starting the UA Server
 
+After installing the server via the MSI, you will have two Windows Services running. One will be UniversalAutomation while the other is UniversalAutomationDashboard. They will automatically start after installation and after restarting the machine. 
+
+## Configuring the UA Server
+
+When the UA server is installed using the MSI, the folder `%ProgramData\UniversalAutomation` will be created. This folder will contain the following. 
+
+* PS1 file for configuring the UA Server
+* PS1 file for configuring the UA Dashboard
+* Folder for the git repository 
+* The LiteDB database
+
+You can configure the settings for the UA Server and Dashboard within these PS1 files. 
+
+## Starting the UA Server from the Command Line
+
 The UA server is started with `Start-UAServer`. You can specify settings such as a port, git remote and database connection string. 
 
 ```text
