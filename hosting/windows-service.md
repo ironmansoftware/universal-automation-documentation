@@ -1,5 +1,11 @@
 # Windows Service
 
+## Automation Configuration
+
+If you run the Universal Automation MSI, it will automatically install and configure the Windows Services for both UA and the UA Dashboard. 
+
+## Manual Configuration
+
 You can host Universal Automation as a Windows Service using NSSM. In this example, we assume you have installed the Universal Automation module to a location that the user running the service has access to. 
 
 ```text
