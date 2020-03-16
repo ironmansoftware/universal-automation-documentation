@@ -4,6 +4,8 @@
 
 If you run the Universal Automation MSI, it will automatically install and configure the Windows Services for both UA and the UA Dashboard. 
 
+By default, the configuration files for the UA services will be installed to `%ProgramData\UniversalAutomation`. If you want to change the configuration of either the dashboard or the UA server, you will have to restart the respective service. 
+
 ## Manual Configuration
 
 You can host Universal Automation as a Windows Service using NSSM. In this example, we assume you have installed the Universal Automation module to a location that the user running the service has access to. 
