@@ -26,3 +26,11 @@ Start-UAServer -GitRemote 'https://github.com/adamdriscoll/myRemote.git'
 
 You can also configure a git remote using the `Set-UASetting` cmdlet. If a git remote is already configured in the git repository that is cloned on disk, there is no need to configure a git remote manually.
 
+## Settings
+
+#### Concurrent Job Limit
+
+You can set the concurrent job limit for the server to reduce the number of jobs running at once. This can help prevent resources from being swamped. The default value is an unlimited number of jobs. Unlicensed versions of UA are limited to 2 jobs. You can adjust this limit from the settings tab within the UI or by setting the ConcurrentJobLimit property of the UASettings object. 
+
+Once the concurrent job limit is reached, jobs will queue and wait for jobs to process before starting. 
+
