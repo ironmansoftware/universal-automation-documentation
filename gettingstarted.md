@@ -95,8 +95,7 @@ Once connected, we'll immediately be able to execute commands against our Univer
 Optionally, if the Dashboard component of Universal Automation is installed, we can initiate the Dashboard component with the following commands:
 
 ```text
-$Dashboard = New-UADashboard
-Start-UDDashboard -Dashboard $Dashboard -Port 10001
+Start-UADashboard -Port 10001 -ComputerName http://localhost:10000
 ```
 
 At this point we'll have our Universal Automation server started and ready to receive commands.
