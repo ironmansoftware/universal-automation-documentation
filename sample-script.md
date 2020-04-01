@@ -12,8 +12,7 @@ $ComputerName = "http://localhost:10000"
 
 Start-UAServer -Port 10000 
 
-$Cache:ComputerName = $ComputerName 
-$AppToken = Grant-UAAppToken -IdentityName System -Role Administrator -ComputerName $ComputerName
+$AppToken = $AppToken = (Enable-UAAuthentication -ComputerName $ComputerName -Force).Token
 Connect-UAServer -ComputerName $ComputerName -AppToken $AppToken.Token
 $Dashboard = New-UADashboard
 
@@ -56,9 +55,8 @@ $AuthPolicy = New-UDAuthorizationPolicy -Name "Policy" -Endpoint {
 }
 
 $LoginPage = New-UDLoginPage -AuthenticationMethod $AuthMethod -AuthorizationPolicy $AuthPolicy
-$Dashboard.LoginPage = $LoginPage
 
-Start-UDDashboard -Dashboard $Dashboard -Port 10001 -AdminMode -AllowHttpForLogin
+Start-UADashbaord -Port 10001 -LoginPage $LoginPage
 
 Start-Process http://localhost:10001
 
