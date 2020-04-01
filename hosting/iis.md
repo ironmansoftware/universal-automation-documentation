@@ -93,8 +93,6 @@ To configure the UA dashboard, you can follow the same steps above for creating 
 
 ```text
 Import-Module UniversalAutomation.Dashboard
-Connect-UAServer -ComputerName http://localhost:81
-$Dashboard = New-UADashboard -ComputerName http://localhost:81
-Start-UDDashboard -Dashboard $Dashboard -Wait
+Start-UADashboard -Wait -ComputerName http://localhost:81
 ```
 
