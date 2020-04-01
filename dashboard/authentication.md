@@ -5,8 +5,6 @@ By default, the UA dashboard is not configured for authentication. You can use a
 Here is an example of using forms authentication with UA. 
 
 ```text
-$Dashboard = New-UADashboard -ComputerName "http://localhost:10001"
-
 $AuthMethod = New-UDAuthenticationMethod -Endpoint {
     param([pscredential]$Credential)
 
@@ -29,28 +27,50 @@ $AuthMethod = New-UDAuthenticationMethod -Endpoint {
 }
 
 $AuthPolicy = New-UDAuthorizationPolicy -Name "Policy" -Endpoint {
-    if (-not $Session:AppToken)
+    param($ClaimsPrincipal)
+
+    $UserName = $ClaimsPrincipal.Identity.Name 
+    $Session:UserRole = ""
+
+    $Identity = Get-UAIdentity -Name $UserName 
+    if ($Identity -eq $null)
     {
-        $Identity = Get-UAIdentity -Name $User.Identity.Name 
-        if ($null -ne $Identity)
+        if ($UserName -eq 'OperatorFred')
         {
-            $AppToken = Get-UAAppToken -Identity $Identity
-            if (-not $AppToken.Revoked)
-            {
-                $Session:AppToken = $AppToken.Token
-            }
+            $Role = Get-UARole -Name "Operator"
+            $Identity = New-UAIdentity -Name $UserName -Role $Role
+            $Session:UserRole = "Operator"
+        }            
+        elseif ($UserName -eq 'ReaderJane')
+        {
+            $Role = Get-UARole -Name "Reader"
+            $Identity = New-UAIdentity -Name $UserName -Role $Role
+            $Session:UserRole = "Reader"
+        }
+        else 
+        {
+            $Role = Get-UARole -Name "Administrator"
+            $Identity = New-UAIdentity -Name $UserName -Role $Role
+            $Session:UserRole = "Administrator"
         }
 
-        if (-not $Session:AppToken)
+        $AppToken = (Grant-UAAppToken -Identity $Identity).Token
+    }
+    else 
+    {
+        $AppToken = (Get-UAAppToken -Identity $Identity).Token
+        if ($null -eq $AppToken)
         {
-            $Session:AppToken = (Grant-UAAppToken -Role Administrator -Identity $User.Identity.Name).Token
+            $AppToken = (Grant-UAAppToken -Identity $Identity).Token
         }
     }
-    
+
+    $Session:AppToken = $AppToken 
+
     $true
 }
 
 $LoginPage = New-UDLoginPage -AuthenticationMethod $AuthMethod -AuthorizationPolicy $AuthPolicy
-$Dashboard.LoginPage = $LoginPage
+Start-UADashboard -LoginPage $LoginPage -Port 10000
 ```
 
