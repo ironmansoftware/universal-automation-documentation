@@ -79,9 +79,9 @@ This allows scripts to be used lightweight/simple storage for variables.
 * URLs / Webhook API URIs
 * Timestamps \("LastUpdated", "LastRecordProcessed"\)
 
-### Encrypted Variables
+### Secret Variables
 
-Variables can be encrypted.
+Secret variables are stored within configured vaults. Secrets are managed by the Secret Management module.
 
 ### Using Variables
 

@@ -14,11 +14,10 @@ New-UAVariable -Name 'TestVar' -Value 'TestVar1'
 
 ## Secrets
 
-You can create secret variables that are not stored in Git by specifying a SecretManager when creating a new variable. The secret manager will be used to retrieve the value of the variable at runtime. You can configure what ever secret manager you like with the UASecretManager cmdlets.
+Secret variables are stored within a Secret Management vault. On Windows, the BuiltInLocalVault is the Credential Manager. You can use the Secret Management module to create secrets and then import them into UA. 
 
 ```text
-$SecretManager Get-UASecretManager -Name 'DAPI'
-New-UAVariable -Name 'ApiKey' -SecretManager $SecretManager
+Set-Secret -Name 'Secret' -Value 'MySecret'
 ```
 
 The value of secrets are never stored in the UA database or git repo. You need to ensure that you do not log the secrets in your scripts in order to prevent exposing them through the logs.
