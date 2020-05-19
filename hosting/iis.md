@@ -15,11 +15,11 @@ Install-Module UniversalAutomation.Dashboard -Scope AllUsers -AllowPrerelease
 
 The first step is to create a web site within IIS. You will need to bind the web site to a port. If you are going to run the Universal Automation Dashboard on the same server as the UA server, you should select an alternate port. 
 
-![](../.gitbook/assets/image%20%2812%29.png)
+![](../.gitbook/assets/image%20%286%29%20%281%29.png)
 
 The website should point to a local directory that will contain the web.config file and a PS1 file to start the UA server. 
 
-![IIS Web Site Settings](../.gitbook/assets/image%20%2818%29.png)
+![IIS Web Site Settings](../.gitbook/assets/image%20%289%29.png)
 
 Within the directory, create a web.config file that will start PowerShell.exe or Pwsh.exe with the -File parameter and point it to a PS1 file. You can optionally choose to enable STDOUT logging to see the output of the UA server. This is helpful when first configuring the server to aid in debugging issues. 
 
